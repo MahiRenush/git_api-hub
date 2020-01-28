@@ -1,0 +1,14 @@
+
+$common-pad: '5px';
+.row{
+    padding: 8px;
+}
+.col-sm-2{
+     padding: $common-pad;   
+    .card-img-top{
+        padding: 5px;
+        border-radius: 100%;
+        display: block;
+        object-fit: cover
+    }
+}

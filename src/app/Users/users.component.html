@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2" *ngFor="let user of gitUsers" >
+            <div class="card" (click)="cardClick(user.login)">
+                <img [src]="user.avatar_url" class="card-img-top" alt="avatar">
+                <div class="card-body">
+                    <h6 class="card-title">{{user.login}}</h6>
+                    <div class="card-text">
+                        <div class="follow"><a [href]="user.followers_url">Followers</a></div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

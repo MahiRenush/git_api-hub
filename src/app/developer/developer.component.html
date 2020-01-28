@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <img [src]="user.avatar_url" alt="Developer pic"><br>
+            <h4 class="high">{{user.name}}</h4>
+            <h6>{{user.login}}</h6>
+        </div>
+        <div class="col-md-9">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav nav">
+                    <li class="nav-item">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                      <a class="nav-link" routerLink='/users/{{username}}/repos' [routerLinkActive]="['active']">Repositories&nbsp;<span class="badge badge-success">30/{{user.public_repos}}</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="/users/{{username}}/starred" [routerLinkActive]="['active']">Starred</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/users/{{username}}/following" [routerLinkActive]="['active']">Following&nbsp;<span class="badge badge-primary">{{user.following}}</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/users/{{username}}/followers" [routerLinkActive]="['active']">Followers&nbsp;<span class="badge badge-primary">{{user.followers}}</span></a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </nav>
+              <router-outlet></router-outlet>
+
+        </div>
+    </div>
+</div>
