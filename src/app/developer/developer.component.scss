@@ -1,0 +1,23 @@
+$row-pad:10px 15px;
+img{
+    top: 5px;
+    display: flex;
+    object-fit: cover;
+    height: 22rem;
+    width: 18rem;
+}
+.col-md-3{
+    padding: $row-pad;
+    background-color: aqua;
+}
+nav{
+    background-color: rgb(243, 226, 226);
+}
+.row{
+    padding: $row-pad;
+    height: 35rem;
+}
+.high{
+    font-size: 2vw;
+    color: rgb(21, 20, 95);
+}
